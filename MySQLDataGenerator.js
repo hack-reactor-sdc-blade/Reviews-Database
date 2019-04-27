@@ -113,7 +113,7 @@ let addUsers = function() {
 };
 
 let addReviews = function() {
-    if (reviewsBatchCount < 50000) {
+    if (reviewsBatchCount < 40000) {
         reviewsBatchCount += 1;
         let reviewDocs = createReviews();
         connection.query(insertReviewsStatement, [reviewDocs], (err, result) => {
@@ -130,7 +130,7 @@ let addReviews = function() {
 };
 
 let addApartments = function() {
-    if (apartmentsBatchCount < 10000) {
+    if (apartmentsBatchCount < 10) {
         apartmentsBatchCount += 1;
         let apartmentDocs = createApartments();
         connection.query(insertApartmentsStatement, [apartmentDocs], (err, result) => {
