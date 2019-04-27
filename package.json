@@ -1,0 +1,28 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node dbServer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.2",
+    "mysql": "^2.17.0",
+    "nodemon": "^1.18.11",
+    "url-loader": "^1.1.2",
+    "util": "^0.11.1"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "faker": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.5.0",
+    "morgan": "^1.9.1"
+  }
+}
